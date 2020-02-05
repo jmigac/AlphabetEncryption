@@ -29,5 +29,8 @@ if __name__ == "__main__":
         if(slovo != " "):
             novoSlovo = Slovo(slovo,'./alphabet/'+slovo+".jpg")
             nizSlova.append(novoSlovo)
+        elif(slovo == " "):
+            razmak = Slovo(" ",'./alphabet/SPACE.jpg')
+            nizSlova.append(razmak)
 
 prikazSlikaHorizontalno(nizSlova)
